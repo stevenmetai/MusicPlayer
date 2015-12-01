@@ -1,0 +1,42 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="song_img_size">40dp</dimen>
+    <dimen name="song_img_marginStart">16dp</dimen>
+    <dimen name="title_marginStart">16dp</dimen>
+    <dimen name="item_group_height">50dp</dimen>
+    <dimen name="item_group_marginStart">16dp</dimen>
+    <dimen name="item_group_text_size">17sp</dimen>
+    <dimen name="playscreen_art_size">300dp</dimen>
+    <dimen name="track_name_marginBottom">11dp</dimen>
+    <dimen name="time_layout_marginBottom">34dp</dimen>
+    <dimen name="time_layout_marginSide">20dp</dimen>
+    <dimen name="control_icon_marginTop">34dp</dimen>
+    <dimen name="control_icon_size">36dp</dimen>
+    <dimen name="vol_seekbar_width">200dp</dimen>
+    <dimen name="vol_seekbar_marginTop">33dp</dimen>
+    <dimen name="vol_seekbar_marginBottom">40dp</dimen>
+    <dimen name="vol_icon_size">24dp</dimen>
+    <dimen name="album_art_marginTop">36dp</dimen>
+    <dimen name="album_art_marginSide">50dp</dimen>
+    <dimen name="album_art_marginBottom">18dp</dimen>
+    <dimen name="playscreen_marginSide">16dp</dimen>
+    <dimen name="artist_marginBottom">34dp</dimen>
+    <dimen name="drawer_item_bar_width">3dp</dimen>
+    <dimen name="drawer_item_height">48dp</dimen>
+    <dimen name="drawer_item_text_size">17sp</dimen>
+    <dimen name="track_item_height">53dp</dimen>
+    <dimen name="expandlist_indicator_boundleft">50dp</dimen>
+    <dimen name="expandlist_indicator_boundright">10dp</dimen>
+    <dimen name="track_name_size">22sp</dimen>
+    <dimen name="spinner_width">328dp</dimen>
+    <dimen name="spinner_item_height">48dp</dimen>
+    <dimen name="spinner_text_paddingStart">20dp</dimen>
+    <dimen name="time_seekbar_height">6dp</dimen>
+    <dimen name="vol_seekbar_height">8dp</dimen>
+</resources>

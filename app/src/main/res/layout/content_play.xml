@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/album_art"
+        android:layout_marginTop="@dimen/album_art_marginTop"
+        android:layout_marginStart="@dimen/album_art_marginSide"
+        android:layout_marginEnd="@dimen/album_art_marginSide"
+        android:layout_marginBottom="@dimen/album_art_marginBottom"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/track_name"
+        android:textColor="@color/navItemBar"
+        android:textSize="@dimen/track_name_size"
+        android:layout_marginStart="@dimen/playscreen_marginSide"
+        android:layout_marginEnd="@dimen/playscreen_marginSide"
+        android:layout_above="@+id/artist"
+        android:layout_marginBottom="@dimen/track_name_marginBottom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/artist"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/time_layout"
+        android:layout_marginStart="@dimen/playscreen_marginSide"
+        android:layout_marginEnd="@dimen/playscreen_marginSide"
+        android:layout_marginBottom="@dimen/artist_marginBottom"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_layout"
+        android:layout_above="@+id/button_linearlayout"
+        android:layout_marginStart="@dimen/playscreen_marginSide"
+        android:layout_marginEnd="@dimen/playscreen_marginSide"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/time_layout_marginBottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:id="@+id/elapsed_time" />
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="@dimen/time_seekbar_height"
+            android:id="@+id/time_seekBar"
+            android:progress="0"
+            android:layout_weight="1"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:thumb="@null"
+            android:background="@null" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:id="@+id/full_time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_icon_size"
+        android:id="@+id/button_linearlayout"
+        android:layout_above="@+id/vol_linearLayout"
+        android:layout_marginStart="@dimen/playscreen_marginSide"
+        android:layout_marginEnd="@dimen/playscreen_marginSide"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/control_icon_size"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/no_repeat_icon_selector"
+            android:id="@+id/repeat" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/control_icon_size"
+            android:src="@drawable/previous_icon_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/previous" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/control_icon_size"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/pause_icon_selector"
+            android:id="@+id/play" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/control_icon_size"
+            android:src="@drawable/next_icon_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/next" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/control_icon_size"
+            android:src="@drawable/no_shuffle_icon_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:id="@+id/shuffle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vol_linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/vol_seekbar_marginTop"
+        android:layout_marginBottom="@dimen/vol_seekbar_marginBottom" >
+        <ImageView
+            android:layout_width="@dimen/vol_icon_size"
+            android:layout_height="@dimen/vol_icon_size"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/mute"
+            android:src="@drawable/volume_icon_selector"/>
+        <SeekBar
+            android:layout_width="@dimen/vol_seekbar_width"
+            android:layout_height="@dimen/vol_seekbar_height"
+            android:id="@+id/vol_seekbar"
+            android:progressDrawable="@drawable/custom_seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            android:splitTrack="false" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navItemBar">#FFC42B</color>
+    <color name="pressItemBg">#4CFFC42B</color>
+    <color name="drawerBg">#675755</color>
+    <color name="spinner_bg_pressed">#866A3F</color>
+    <color name="spinner_bg_normal">#7F7270</color>
+    <color name="spinner_bg_focused">#A88439</color>
+    <color name="spinner_bg_focused_border">#FFC42B</color>
+    <color name="spinner_item_pressed">#A68B5B</color>
+    <color name="seekbar_color">#FFC42B</color>
+</resources>

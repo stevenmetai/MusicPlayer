@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/spinner_bg_focused_shape"/>
+    <item android:state_pressed="true" android:drawable="@drawable/spinner_bg_pressed_shape"/>
+    <item android:drawable="@color/spinner_bg_normal" />
+</selector>-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="transparent">
+    <item android:state_focused="true" android:drawable="@drawable/spinner_bg_focused_shape"/>
+    <item android:state_pressed="true" android:drawable="@drawable/spinner_bg_pressed_shape"/>
+    <item android:drawable="@color/spinner_bg_normal" />
+    <item android:drawable="@drawable/spinner_default_holo_light" android:width="328dp"></item>
+</layer-list>

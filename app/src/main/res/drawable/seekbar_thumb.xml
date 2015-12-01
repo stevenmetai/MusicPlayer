@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:bottom="2dp">
+        <shape android:shape="oval" >
+            <size android:width="8dp"
+                  android:height="8dp" />
+            <solid android:color="@color/seekbar_color"/>
+        </shape>
+    </item>
+</layer-list>

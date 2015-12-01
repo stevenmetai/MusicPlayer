@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MusicPlayer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="album">Album</string>
+    <string name="artist">Artist</string>
+    <string name="track">Track</string>
+    <string name="zero">0:00</string>
+</resources>
