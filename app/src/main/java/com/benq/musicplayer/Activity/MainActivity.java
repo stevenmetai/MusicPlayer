@@ -139,7 +139,6 @@ public class MainActivity extends AppCompatActivity
     static class IncomingHandler extends Handler {
 
         private final WeakReference<MainActivity> mActivity;
-
         IncomingHandler(MainActivity activity) {
             mActivity = new WeakReference<>(activity);
         }
@@ -255,22 +254,16 @@ public class MainActivity extends AppCompatActivity
         FragmentManager fragmentManager = getFragmentManager();
         switch (position) {
             case 0: //album
-                if (mCurrentCategory != Constants.CATEGORY_ALBUM) {
                     mFragment = new ArtistAlbumFragment(Constants.CATEGORY_ALBUM);
                     mCurrentCategory = Constants.CATEGORY_ALBUM;
-                }
                 break;
             case 1: //artist
-                if (mCurrentCategory != Constants.CATEGORY_ARTIST) {
                     mFragment = new ArtistAlbumFragment(Constants.CATEGORY_ARTIST);
                     mCurrentCategory = Constants.CATEGORY_ARTIST;
-                }
                 break;
             case 2: //track
-                if (mCurrentCategory != Constants.CATEGORY_TRACK) {
                     mFragment = new TrackFragment();
                     mCurrentCategory = Constants.CATEGORY_TRACK;
-                }
                 break;
         }
         if (mFragment != null) {
